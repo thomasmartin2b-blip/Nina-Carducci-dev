@@ -150,7 +150,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i - 1 ;
+          index = i - 1 ; // Décrémente de 1
         }
       });
       next =
@@ -189,7 +189,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i + 1;
+          index = i + 1; // Incrémente de 1
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
@@ -210,7 +210,7 @@
                             <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>'
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>' // Accolade parasite
                                 : '<span style="display:none;" />'
                             }
                         </div>
@@ -240,7 +240,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag active");
+      $(this).addClass("active-tag active"); // Ajout de "active"
 
       var tag = $(this).data("images-toggle");
 
