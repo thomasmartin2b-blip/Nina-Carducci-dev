@@ -68,9 +68,11 @@ body {
 }
 
 .picture img {
-	width: 100%;
-
+    width: 100%;
+    height: auto;
+    max-width: 600px;
 }
+
 #about-me {
 	flex: 2
 }
@@ -134,6 +136,10 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+}
+
+.visually-hidden {
+    color: #000000 !important;
 }
 
 .quote {
